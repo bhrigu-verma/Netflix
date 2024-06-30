@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
-import BackgroundImage from "../components/BackgroundImage";
-import Header from "../components/Header";
-import Footer from "../Footer/Footer";
-import Developers from "../components/Developers";
+
+
+
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -29,7 +29,7 @@ export default function Signup() {
 
   return (
     <>
-      <BackgroundImage />
+      <WelcomePageBanner />
     
    
     <div className="flex flex-col items-center justify-center h-screen">
