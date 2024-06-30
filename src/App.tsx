@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import LandingPage from './components/LandingPage';
@@ -16,6 +17,12 @@ import React from "react";
 const App = () => {
     return (
         <div className="bg-[#1F1E24] w-screen h-full flex">
+            <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
             <Routes>
             <Route path="/" element={<LandingPage/>}></Route>  
                 <Route path="/home" element={<Home />} />
