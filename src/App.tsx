@@ -12,6 +12,7 @@ import TvDetails from "./components/TvDetails";
 import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import NotFound from "./components/NotFound";
+import { SignIn } from "./components/Signin";
 import React from "react";
 
 const App = () => {
