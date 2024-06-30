@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
-
-
+import WelcomePageBanner from "./BackgroundImage";
+import Headeer from "./Headeer";
 
 
 import { ToastContainer, toast } from "react-toastify";
@@ -34,7 +34,7 @@ export default function Signup() {
    
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="content absolute inset-0 z-10 bg-gray-900 bg-opacity-50">
-      <Header login={"login"} />
+      <Headeer login={"login"} />
         <div className="body flex flex-col items-center justify-center">
           <div className="text text-center">
             <h1 className="text-4xl font-bold mb-4 text-white">
@@ -81,8 +81,8 @@ export default function Signup() {
           </div>
         </div>
       </div>
-      <Developers />
-      <Footer />
+      {/* <Developers />
+      <Footer /> */}
     </div>
     </>
   );

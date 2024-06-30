@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
-import BackgroundImage from "../components/BackgroundImage";
-import Header from "../components/Header";
-import Footer from '../Footer/Footer';
+import WelcomePageBanner from "./BackgroundImage";
+import Headeer from "./Headeer";
+
 import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -31,9 +31,9 @@ function Login() {
 
   return (
     <div className="relative min-h-screen">
-      <BackgroundImage />
+      <WelcomePageBanner />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-between">
-        <Header  />
+        <Headeer  />
         <div className="flex flex-col items-center justify-center h-full px-4 md:px-0">
           <div className="bg-black bg-opacity-70 w-full max-w-xl rounded-lg p-8">
             <div className="text-white text-2xl font-bold mb-6">Sign In</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/bg.jpg";
+import background from "../assets/images/WelcomePageBanner.jpg";
 
 export default function BackgroundImage() {
   return (
