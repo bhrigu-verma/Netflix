@@ -37,23 +37,23 @@ const App = () => {
                 <Route path="/signin" element={<Signin />} /> */}
                 
                 <Route path="/trending" element={<ProtectedRoute><Trending /></ProtectedRoute>} />
-                <Route path="/popular" element={<Popular />} />
+                <Route path="/popular" element={<ProtectedRoute><Popular /></ProtectedRoute>} />
                 <Route path="/movie" element={<Movie />} />
-                <Route path="/movie/details/:id" element={<Moviedetails />}>
+                <Route path="/movie/details/:id" element={<ProtectedRoute><Moviedetails /></ProtectedRoute>}>
                     <Route
                         path="/movie/details/:id/trailer"
-                        element={<Trailer />}
+                        element={<ProtectedRoute><Trailer /></ProtectedRoute>}
                     />
                 </Route>
-                <Route path="/tv" element={<Tvshows />} />
-                <Route path="/tv/details/:id" element={<TvDetails />}>
+                <Route path="/tv" element={<ProtectedRoute><Tvshows /></ProtectedRoute>} />
+                <Route path="/tv/details/:id" element={<ProtectedRoute><TvDetails /></ProtectedRoute>}>
                     <Route
                         path="/tv/details/:id/trailer"
-                        element={<Trailer />}
+                        element={<ProtectedRoute><Trailer /></ProtectedRoute>}
                     />
                 </Route>
                 <Route path="/person" element={<People />} />
-                <Route path="/person/details/:id" element={<PersonDetails />} />
+                <Route path="/person/details/:id" element={<ProtectedRoute><PersonDetails /></ProtectedRoute>} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
