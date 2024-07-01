@@ -3,12 +3,12 @@
       { "src": "/",
        "dest": "/" },{
         "src": "/home",
-        "dest": "/home"
-       }
+        "dest": "/"
+       },
        {
         "src": "/about",
-        "dest": "/about"
-       }
+        "dest": "/"
+       },
        {
         "src": "/contact",
         "dest": "/contact"}
