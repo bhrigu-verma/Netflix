@@ -1,17 +1,6 @@
 {
-    "routes": [
-      { "src": "/",
-       "dest": "/" },{
-        "src": "/home",
-        "dest": "/"
-       },
-       {
-        "src": "/about",
-        "dest": "/"
-       },
-       {
-        "src": "/contact",
-        "dest": "/contact"}
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
   
