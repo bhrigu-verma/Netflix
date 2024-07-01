@@ -12,21 +12,27 @@ import TvDetails from "./components/TvDetails";
 import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import NotFound from "./components/NotFound";
-import { SignIn } from "./components/Signin";
+import SignInPage from './components/SignIn';
+import SignUpPage from './components/SignUp';
 import React from "react";
 
 const App = () => {
     return (
         <div className="bg-[#1F1E24] w-screen h-full flex">
-            <SignedOut>
+             {/* <SignedOut>
         <SignInButton />
       </SignedOut>
       <SignedIn>
         <UserButton />
-      </SignedIn>
+      </SignedIn> */}
             <Routes>
+            <Route path="/sign-in" element={<SignInPage/>} />
+            <Route path="/sign-up" element={<SignUpPage/>} />
             <Route path="/" element={<LandingPage/>}></Route>  
                 <Route path="/home" element={<Home />} />
+                {/* <Route path="/signup" element={<Signup />} />
+                <Route path="/signin" element={<Signin />} /> */}
+                
                 <Route path="/trending" element={<Trending />} />
                 <Route path="/popular" element={<Popular />} />
                 <Route path="/movie" element={<Movie />} />
