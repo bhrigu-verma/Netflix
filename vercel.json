@@ -5,6 +5,13 @@
         "src": "/home",
         "dest": "/home"
        }
+       {
+        "src": "/about",
+        "dest": "/about"
+       }
+       {
+        "src": "/contact",
+        "dest": "/contact"}
     ]
   }
   
