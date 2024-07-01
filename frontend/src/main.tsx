@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import Profile from "./components/partials/Profile";
 import "./index.css";
 import { store } from "./store/store";
 import { BrowserRouter } from "react-router-dom";
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <BrowserRouter>
         <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
             <App />
+          
             </ClerkProvider>
         </BrowserRouter>
     </Provider>

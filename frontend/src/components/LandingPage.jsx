@@ -37,8 +37,8 @@ function Welcome() {
     <img className="ml-[60px] w-[119px] " src={landpng} />
     <div className="justify-end pl-[929px] pt-5"> 
     
-    <Link to={"/home"} className=" px-1 mt-3 mx-6  font-bold text-zinc-200 bg-red-700 rounded-[20px] sm:py-4 md:mt-0 md:pb-5 md:text-xl ">
-    Try NETFLIX
+    <Link to={"/sign-in"} className="text-[12px] px-1 mt-3 mx-6  font-bold text-zinc-200 bg-red-700 rounded-[20px] sm:py-4 md:mt-0 md:pb-5 md:text-xl ">
+    Already a user?
   </Link>
     
     </div>
@@ -66,9 +66,9 @@ function Welcome() {
                   placeholder="Email Address"
                   className="w-full p-2 py-3 rounded-sm sm:py-4 md:py-5 md:w-[40%]"
                 />
-                <Link to={"/signup"}>
+                <Link to={"/sign-up"}>
                   <button className="px-4 mx-5 mt-3 font-medium text-white bg-red-700 rounded-[20px] sm:py-4 md:mt-0 md:pb-5 md:text-xl md:w-1/4">
-                   <SignInButton  Get Started/>
+                    Get Started
                   </button>
                 </Link>
                 

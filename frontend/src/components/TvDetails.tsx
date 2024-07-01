@@ -126,7 +126,7 @@ const TvDetails = () => {
                             <img
                                 key={i}
                                 title={w.provider_name}
-                                className="w-[5vh] h-[5vh] object-cover rounded-md"
+                                className="w-[10vh] h-[10vh] object-cover rounded-md"
                                 src={`https://image.tmdb.org/t/p/original/${w.logo_path}`}
                                 alt=""
                             />
@@ -167,23 +167,25 @@ const TvDetails = () => {
 
             {/* Part 4 Seasons */}
             <hr className="mt-10 mb-5 border-none h-[2px] bg-zinc-500" />
-            <h1 className=" text-3xl font-bold text-white">Seasons</h1>
-            <div className="w-[100%] flex overflow-y-hidden mb-5 p-5 ">
+            <h1 className=" text-4xl font-bold text-white">Seasons</h1>
+            <div className="w-[100%] flex overflow-y-hidden mb-5 m-1 p-5 ">
                 {info.detail.seasons.length > 0 ? (
                     info.detail.seasons.map((s, i) => (
-                        <div key={i} className="w-[15vh] mr-[8%]">
+                        <div key={i} className="w-[25vh] flex flex-col  mr-[8%]">
                             <img
-                                className="shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] min-w-[14vw] h-[30vh] object-cover"
+                                className=" min-w-[24vw] h-[40vh]  rounded-sm object-scale-down"
                                 src={
                                     s.poster_path
                                         ? `https://image.tmdb.org/t/p/original/${s.poster_path}`
                                         : noimage
                                 }
                                 alt=""
+                                
                             />
-                            <h1 className="text-2xl text-zinc-300 mt-3 font-semibold ">
+                            <div>
+                            <div className="text-2xl w-200px pr-10 text-zinc-300 mt-3 ml-4 font-semibold ">
                                 {s.name}
-                            </h1>
+                            </div></div>
                         </div>
                     ))
                 ) : (

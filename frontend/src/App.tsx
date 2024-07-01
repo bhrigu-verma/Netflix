@@ -12,8 +12,10 @@ import TvDetails from "./components/TvDetails";
 import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import NotFound from "./components/NotFound";
+import Profile from './components/partials/Profile';
 import SignInPage from './components/SignIn';
 import SignUpPage from './components/SignUp';
+import ProtectedRoute from "./Protectedroutes";
 import React from "react";
 
 const App = () => {
@@ -25,15 +27,16 @@ const App = () => {
       <SignedIn>
         <UserButton />
       </SignedIn> */}
+               
             <Routes>
             <Route path="/sign-in" element={<SignInPage/>} />
             <Route path="/sign-up" element={<SignUpPage/>} />
             <Route path="/" element={<LandingPage/>}></Route>  
-                <Route path="/home" element={<Home />} />
+                <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
                 {/* <Route path="/signup" element={<Signup />} />
                 <Route path="/signin" element={<Signin />} /> */}
                 
-                <Route path="/trending" element={<Trending />} />
+                <Route path="/trending" element={<ProtectedRoute><Trending /></ProtectedRoute>} />
                 <Route path="/popular" element={<Popular />} />
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/movie/details/:id" element={<Moviedetails />}>
