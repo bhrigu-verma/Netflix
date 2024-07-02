@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 // import { SignOutButton } from "@clerk/clerk-react";
 import { Link } from "react-router-dom";
 import noimage from "/noimage.jpeg";
-import Profile from "./Profile";
+// import Profile from "./Profile";
 const Topnav = () => {
     const [query, setquery] = useState("");
     const [searches, setsearches] = useState([]);
@@ -38,7 +38,7 @@ const Topnav = () => {
                     className=" text-zinc-400 text-3xl ri-close-fill right-0"
                 ></i>
             )}
-              <Profile />
+{/*               <Profile /> */}
               {/* <SignInButton>
         <button className="text-white w-25vh font-bold bg-purple-500 rounded-lg">Sign in with Clerk</button>
       </SignInButton> */}
