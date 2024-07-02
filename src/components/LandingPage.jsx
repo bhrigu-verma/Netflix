@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+// import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import Footer from "./partials/Footer";
 
 
@@ -66,7 +66,7 @@ function Welcome() {
                   placeholder="Email Address"
                   className="w-full p-2 py-3 rounded-sm sm:py-4 md:py-5 md:w-[40%]"
                 />
-                <Link to={"/sign-up"}>
+                <Link to={"/home"}>
                   <button className="px-4 mx-5 mt-3 font-medium text-white bg-red-700 rounded-[20px] sm:py-4 md:mt-0 md:pb-5 md:text-xl md:w-1/4">
                     Get Started
                   </button>
