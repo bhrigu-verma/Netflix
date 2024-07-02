@@ -13,8 +13,8 @@ import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import NotFound from "./components/NotFound";
 import Profile from './components/partials/Profile';
-import SignInPage from './components/SignIn';
-import SignUpPage from './components/SignUp';
+// import SignInPage from './components/SignIn';
+// import SignUpPage from './components/SignUp';
 
 import React from "react";
 
@@ -29,8 +29,8 @@ const App = () => {
       </SignedIn> */}
                
             <Routes>
-            <Route path="/sign-in" element={<SignInPage/>} />
-            <Route path="/sign-up" element={<SignUpPage/>} />
+{/*             <Route path="/sign-in" element={<SignInPage/>} />
+            <Route path="/sign-up" element={<SignUpPage/>} /> */}
             <Route path="/" element={<LandingPage/>}></Route>  
                 <Route path="/home" element={<Home />} />
                 {/* <Route path="/signup" element={<Signup />} />
