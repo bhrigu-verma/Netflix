@@ -42,7 +42,7 @@ const Topnav = () => {
               {/* <SignInButton>
         <button className="text-white w-25vh font-bold bg-purple-500 rounded-lg">Sign in with Clerk</button>
       </SignInButton> */}
-             <button className="text-zinc-300 w-25vh font-bold bg-purple-500 rounded-lg"> Sign Out</button>
+{/*              <button className="text-zinc-300 w-25vh font-bold bg-purple-500 rounded-lg"> Sign Out</button> */}
             <div className="z-[100] text-[16px] absolute w-[60%] max-h-[50vh] bg-zinc-700 top-[100%] left-[5%] overflow-auto">
                 {searches.map((s, i) => (
                     <Link
