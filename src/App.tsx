@@ -49,11 +49,11 @@ const App = () => {
                 <Route path="/tv/details/:id" element={<TvDetails />}>
                     <Route
                         path="/tv/details/:id/trailer"
-                        element={<ProtectedRoute><Trailer /></ProtectedRoute>}
+                        element={<Trailer />}
                     />
                 </Route>
                 <Route path="/person" element={<People />} />
-                <Route path="/person/details/:id" element={<ProtectedRoute><PersonDetails /></ProtectedRoute>} />
+                <Route path="/person/details/:id" element={<PersonDetails />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
