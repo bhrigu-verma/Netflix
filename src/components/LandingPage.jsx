@@ -37,9 +37,9 @@ function Welcome() {
     <img className="ml-[60px] w-[119px] " src={landpng} />
     <div className="justify-end pl-[929px] pt-5"> 
     
-    <Link to={"/home"} className="text-[12px] px-1 mt-3 mx-6  font-bold text-zinc-200 bg-red-700 rounded-[20px] sm:py-4 md:mt-0 md:pb-5 md:text-xl ">
+{/*     <Link to={"/home"} className="text-[12px] px-1 mt-3 mx-6  font-bold text-zinc-200 bg-red-700 rounded-[20px] sm:py-4 md:mt-0 md:pb-5 md:text-xl ">
     Already a user?
-  </Link>
+  </Link> */}
     
     </div>
     </div>
