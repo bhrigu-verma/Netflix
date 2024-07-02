@@ -15,7 +15,7 @@ import NotFound from "./components/NotFound";
 import Profile from './components/partials/Profile';
 import SignInPage from './components/SignIn';
 import SignUpPage from './components/SignUp';
-import ProtectedRoute from "./Protectedroutes";
+
 import React from "react";
 
 const App = () => {
@@ -36,17 +36,17 @@ const App = () => {
                 {/* <Route path="/signup" element={<Signup />} />
                 <Route path="/signin" element={<Signin />} /> */}
                 
-                <Route path="/trending" element={<ProtectedRoute><Trending /></ProtectedRoute>} />
-                <Route path="/popular" element={<ProtectedRoute><Popular /></ProtectedRoute>} />
+                <Route path="/trending" element={<Trending />} />
+                <Route path="/popular" element={<Popular />} />
                 <Route path="/movie" element={<Movie />} />
-                <Route path="/movie/details/:id" element={<ProtectedRoute><Moviedetails /></ProtectedRoute>}>
+                <Route path="/movie/details/:id" element={<Moviedetails />}>
                     <Route
                         path="/movie/details/:id/trailer"
-                        element={<ProtectedRoute><Trailer /></ProtectedRoute>}
+                        element={<Trailer />}
                     />
                 </Route>
-                <Route path="/tv" element={<ProtectedRoute><Tvshows /></ProtectedRoute>} />
-                <Route path="/tv/details/:id" element={<ProtectedRoute><TvDetails /></ProtectedRoute>}>
+                <Route path="/tv" element={<Tvshows />} />
+                <Route path="/tv/details/:id" element={<TvDetails />}>
                     <Route
                         path="/tv/details/:id/trailer"
                         element={<ProtectedRoute><Trailer /></ProtectedRoute>}
